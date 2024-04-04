@@ -14,7 +14,7 @@ async function connectToDB() {
 
 async function selectAQuotation() {
     if (!collection) {
-        collectiopn = await connectToDB();
+        collection = await connectToDB();
     }
     console.log(collection)
     const result = await collection.findOne({});

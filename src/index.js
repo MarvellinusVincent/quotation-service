@@ -15,7 +15,7 @@ app.get("/quotation", async (req, res) => {
     res.status(200).json(quotation);
 })
 
-app/get("/image", async (req, res) => {
+app.get("/image", async (req, res) => {
     const imagePath = req.query.path;
     const forwardRequest = http.request({
         host: FILE_STORAGE_HOST,
